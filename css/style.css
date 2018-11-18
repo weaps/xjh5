@@ -1,0 +1,72 @@
+.bar-xj {
+  background: #CF3529;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.bar-xj .mui-title {
+  color: #ffffff;
+}
+
+.bar-xj .mui-btn-link,
+.bar-xj .mui-icon {
+  color: #ffffff;
+}
+
+.mui-bar-tab .mui-tab-item.mui-active {
+  color: #CF3529;
+}
+
+.mui-grid-view.mui-grid-9.icon-menu .mui-media {
+  background: #ffffff;
+}
+
+.mui-grid-view.mui-grid-9.icon-menu .mui-media .icon {
+  display: inline-block;
+  width: 2rem;
+  height: 2rem;
+}
+
+.mui-grid-view.mui-grid-9.icon-menu .mui-media .icon img {
+  width: 100%;
+}
+
+.bgf {
+  background: #ffffff;
+}
+
+.home-list-item .mui-table-view-cell > a:not(.mui-btn) {
+  white-space: normal;
+  text-overflow: ellipsis;
+}
+
+.home-list-item .mui-table-view-cell > a:not(.mui-btn) .mui-media-body .name {
+  line-height: 1.5rem;
+  margin: 0;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.home-list-item .mui-table-view-cell > a:not(.mui-btn) .mui-media-body .info .price {
+  color: #ff9000;
+  font-size: .4rem;
+}
+
+.home-list-item .mui-table-view-cell > a:not(.mui-btn) .mui-media-body .info .price strong {
+  font-size: 1rem;
+}
+
+.home-list-item .mui-table-view-cell > a:not(.mui-btn) .mui-media-body .info .city {
+  color: #999999;
+  font-size: .6rem;
+}
+
+.home-list-item .mui-table-view-cell > a:not(.mui-btn) .mui-media-body .des span {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.home-list-item .mui-table-view-cell > a:not(.mui-btn) .mui-media-body .des span:last-child {
+  margin-right: 0;
+}
+/*# sourceMappingURL=style.css.map */
