@@ -1,5 +1,11 @@
-.bar-xj
-    background: #CF3529
+$primaryColor: #CF3529
+$borderColor: #e5e5e5
+ul,li
+    margin: 0
+    padding: 0
+    list-style-type: none
+.bar-xj-home
+    background: $primaryColor
     box-shadow: none
     .mui-title
         color: #ffffff
@@ -9,7 +15,7 @@
 .mui-bar-tab
     .mui-tab-item
         &.mui-active
-            color: #CF3529
+            color: $primaryColor
 .mui-grid-view.mui-grid-9.icon-menu 
     .mui-media
         background: #ffffff
@@ -46,3 +52,34 @@
                     margin-right: 10px
                     &:last-child
                         margin-right: 0
+
+
+// 通用筛选
+.pro_filter_more
+    width: 100%
+    min-height: 45px
+    padding: 0 5px
+    font-size: 12px
+    -webkit-overflow-scrolling: touch
+    background-color: #fff
+    .title
+        padding: 5px
+        font-size: 14px
+        border-bottom: 1px solid $borderColor
+    .mui-col-xs-6
+        display: flex
+        padding: 5px
+        label
+            display: block
+            width: 65px
+            line-height: 24px
+        .select-box
+            flex: 1
+            width: 0%
+            height: 24px
+            line-height: 24px
+            padding: 0 5px
+            margin: 0
+            border-radius: 12px
+            background: #fafafa
+            border: 1px solid $borderColor !important
