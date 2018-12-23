@@ -1,9 +1,47 @@
 $primaryColor: #CF3529
 $borderColor: #e5e5e5
+$btnPrimary: #267fd9
+$btnOrange: #ff6f06
+body
+    font-family: "PingFang SC","Hiragino Sans GB","Microsoft YaHei","WenQuanYi Micro Hei","Helvetica Neue",Arial,sans-serif
 ul,li
     margin: 0
     padding: 0
     list-style-type: none
+@mixin nowrap-multi
+    display: -webkit-box
+    overflow: hidden
+    text-overflow: ellipsis
+    -webkit-box-orient: vertical
+    -webkit-line-clamp: 2
+
+.mt10
+    margin-top: 10px
+.mt20
+    margin-top: 20px
+.ui-nowrap-multi
+    display: -webkit-box
+    overflow: hidden
+    text-overflow: ellipsis
+    -webkit-box-orient: vertical
+    -webkit-line-clamp: 2
+.btn-bar-2
+    box-shadow: none
+    .btn-primary
+        background: $btnPrimary
+        color: #ffffff
+        font-size: 12px
+    .btn-orange
+        background: $btnOrange
+        color: #ffffff
+        font-size: 12px
+    &.mui-bar-tab
+        .mui-tab-item
+            .mui-icon
+                top: 0
+            &.mui-active
+                opacity: .8
+                color: #ffffff
 .bar-xj-home
     background: $primaryColor
     box-shadow: none
@@ -12,7 +50,7 @@ ul,li
     .mui-btn-link,
     .mui-icon
         color: #ffffff
-.mui-bar-tab
+.bar-xj-home
     .mui-tab-item
         &.mui-active
             color: $primaryColor
@@ -27,16 +65,21 @@ ul,li
                 width: 100%
 .bgf
     background: #ffffff
+.mui-table-view
+    .mui-table-view-cell > a:not(.mui-btn)
+        .avatar
+            border-radius: 50%
 .home-list-item
     .mui-table-view-cell > a:not(.mui-btn)
         white-space: normal
         text-overflow: ellipsis
         .mui-media-body
             .name
-                line-height: 1.5rem
+                line-height: 1.5
                 margin: 0
-                font-size: 1rem
-                font-weight: 500
+                font-size: 14px
+                font-weight: 400
+                @include nowrap-multi
             .info
                 .price
                     color: #ff9000
@@ -83,3 +126,145 @@ ul,li
             border-radius: 12px
             background: #fafafa
             border: 1px solid $borderColor !important
+
+// 详情页面1
+.detail-imgbox
+    position: relative
+    img
+        vertical-align: top
+.detail-info
+    width: 100%
+    padding: 10px
+    border-bottom: 1px solid $borderColor
+    box-sizing: border-box
+    h1
+        font-size: 18px
+        color: #333333
+        font-weight: 500
+        line-height: 1.42857143
+        margin-bottom: .5rem
+    small
+        color: #999999
+.info-table
+    // padding: 5px 0
+    .title
+        line-height: 30px
+        font-size: 16px
+        padding: 4px 10px
+        border-bottom: 1px solid $borderColor
+    .mui-row
+        li
+            padding: 5px 10px
+            font-size: 14px
+            border-bottom: 1px solid $borderColor
+            color: #666666
+            &:nth-child(odd)
+                border-right: 1px solid $borderColor
+    .activity-center
+        padding-right: 15px
+        min-height: 50px
+        padding-top: 10px
+        padding-bottom: 10px
+        padding-left: 15px
+        overflow: hidden
+        color: #666666
+        p
+            margin-bottom: 10px
+            -webkit-font-smoothing: antialiased
+            font-family: sans-serif
+            background-color: rgb(255, 255, 255)
+            font-size: 16px
+            text-align: justify
+            line-height: 1.42857143
+        ol
+            padding-left: 15px
+            margin: 0
+            li
+                list-style-type: disc
+                line-height: 20px
+                font-size: 14px
+                padding-bottom: 4px
+    .comment
+        .mui-table-view-cell
+            a
+                white-space: normal
+                .name
+                    flex: 1
+                    font-size: 14px
+                    font-weight: 400
+                .time
+                    flex: none
+                    width: 80px
+                    font-size: 12px
+                    color: #bbbbbb
+                    font-weight: normal
+                    text-align: right
+                    font-style: normal
+.flex
+    display: flex
+.substance-more-activit-title
+    padding: 8px 0
+    align-items: center
+    justify-content: center
+    // height: .8rem
+    // background: #f6f6f6
+    .title-line
+        width: 1rem
+        height: 1px
+        background: #999
+        margin: 0 .08rem
+    .list-title
+        padding: 0 5px
+        color: #333
+        margin: 0
+
+    
+// 专家详情页
+.zj-header-bg
+    padding-top: 120px
+    background: url(../images/zj_img2.jpg) no-repeat
+    background-size: cover
+.user-container
+    // position: absolute
+    // bottom: 0
+    // left: 0
+    width: 100%
+    padding: 10px
+    box-sizing: border-box
+    .avatar-box
+        display: inline-block
+        flex: none
+        width: 84px
+        height: 84px
+        border-radius: 64px
+        border: 3px solid #ffffff
+        overflow: hidden
+        margin-top: -12px
+        img
+            width: 100%
+    .user-info
+        flex: 1
+        padding: 0 10px
+        .name
+            font-size: 18px
+            color: #484844
+        .follow-meta
+            padding-top: 5px
+            p
+                flex: 1
+                font-size: 12px
+                .num
+                    display: block
+                    line-height: 10px
+                    color: #333333
+                    font-weight: 500
+    .description
+        padding: 10px
+        font-size: 12px
+        p
+            color: #484848
+        .mui-btn-block
+            padding: 6px 12px
+            margin: 0
+
+
