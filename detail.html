@@ -49,8 +49,43 @@
     </nav>
     <div class="mui-content">
         <!--静态图片-->
-        <div class="detail-imgbox">
+        <!-- <div class="detail-imgbox">
             <img id="img1" src="../images/Helvetica.jpg" class="">
+        </div> -->
+        <!--轮播图片-->
+        <div id="slider" class="mui-slider" >
+            <div class="mui-slider-group">
+                <!-- 第一张 -->
+                <div class="mui-slider-item">
+                    <a href="#">
+                        <img src="../images/1.jpg">
+                    </a>
+                </div>
+                <!-- 第二张 -->
+                <div class="mui-slider-item">
+                    <a href="#">
+                        <img src="../images/2.jpg">
+                    </a>
+                </div>
+                <!-- 第三张 -->
+                <div class="mui-slider-item">
+                    <a href="#">
+                        <img src="../images/3.jpg">
+                    </a>
+                </div>
+                <!-- 第4张 -->
+                <div class="mui-slider-item">
+                    <a href="#">
+                        <img src="../images/4.jpg">
+                    </a>
+                </div>
+            </div>
+            <div class="mui-slider-indicator">
+                <em class="mui-indicator mui-active"></em>
+                <em class="mui-indicator"></em>
+                <em class="mui-indicator"></em>
+                <em class="mui-indicator"></em>
+            </div>
         </div>
         <!-- 标题 -->
         <div class="detail-info bgf">
@@ -121,77 +156,35 @@
             <span class="title-line"></span>
         </div>
         <!-- 推荐 -->
-        <div class="bgf home-list-item">
-            <ul class="mui-table-view">
-                <li class="mui-table-view-cell mui-media mui-media-large">
-                    <a href="./detail.html">
-                    <img class="mui-media-object mui-pull-left" src="./images/shuijiao.jpg">
-                    <div class="mui-media-body">
-                        <h2 class="name">logo设计公司品牌餐饮商标LOGO标志起名vi包装画册设计</h2>
-                        <p class='mui-ellipsis des'>
-                        <span>完全转让</span>
-                        <span>实用新型专利</span>
-                        <span>正在研发</span>
-                        </p>
-                        <P class="info">
-                            <span class="mui-pull-left price">￥<strong>12,000</strong></span>
-                            <span class="mui-pull-right city">上海市</span>
-                        </P>
+        <div class="bgf home-list-item recommend-img-list">
+            <ul class="mui-table-view mui-grid-view">
+                <li class="mui-table-view-cell mui-media mui-col-xs-6">
+                    <div class="mui-card">
+                        <div class="img-box mui-card-media">
+                            <img src="../images/muwu.jpg" alt="">
+                        </div>
+                        <div class="mui-card-content">
+                            <a class="" href="#">这里显示文章摘要</a>
+                        </div>
                     </div>
-                    </a>
                 </li>
-                <li class="mui-table-view-cell mui-media mui-media-large">
-                    <a href="javascript:;">
-                    <img class="mui-media-object mui-pull-left" src="./images/muwu.jpg">
-                    <div class="mui-media-body">
-                        <h2 class="name">公司企业logo设计图文标志画册设计商标设计卡通logo</h2>
-                        <p class='mui-ellipsis des'>
-                        <span>完全转让</span>
-                        <span>实用新型专利</span>
-                        <span>正在研发</span>
-                        </p>
-                        <P class="info">
-                            <span class="mui-pull-left price">￥<strong>12,000</strong></span>
-                            <span class="mui-pull-right city">上海市</span>
-                        </P>
+                <li class="mui-table-view-cell mui-media mui-col-xs-6">
+                    <div class="mui-card">
+                        <div class="img-box mui-card-media">
+                            <img src="../images/muwu.jpg" alt="">
+                        </div>
+                        <div class="mui-card-content">
+                            <a class="" href="#">这里显示文章摘要</a>
+                        </div>
                     </div>
-                    </a>
                 </li>
-                <li class="mui-table-view-cell mui-media mui-media-large">
-                    <a href="javascript:;">
-                    <img class="mui-media-object mui-pull-left" src="./images/cbd.jpg">
-                    <div class="mui-media-body">
-                        <h2 class="name">艺点资深logo设计餐饮logo设计标志设计企业logo设计</h2>
-                        <p class='mui-ellipsis des'>
-                            <span>完全转让</span>
-                            <span>实用新型专利</span>
-                            <span>正在研发</span>
-                        </p>
-                        <P class="info">
-                            <span class="mui-pull-left price">￥<strong>12,000</strong></span>
-                            <span class="mui-pull-right city">上海市</span>
-                        </P>
-                    </div>
-                    </a>
-                </li>
-                <li class="mui-table-view-cell mui-media mui-media-large">
-                    <a href="javascript:;">
-                    <img class="mui-media-object mui-pull-left" src="./images/cbd.jpg">
-                    <div class="mui-media-body">
-                        <h2 class="name">艺点资深logo设计餐饮logo设计标志设计企业logo设计</h2>
-                        <p class='mui-ellipsis des'>
-                        <span>完全转让</span>
-                        <span>实用新型专利</span>
-                        <span>正在研发</span>
-                        </p>
-                        <P class="info">
-                            <span class="mui-pull-left price">￥<strong>12,000</strong></span>
-                            <span class="mui-pull-right city">上海市</span>
-                        </P>
-                    </div>
-                    </a>
-                </li>
-        
+                <li class="mui-table-view-cell mui-media mui-col-xs-6">
+                    <a href="#"><img class="mui-media-object" src="../images/cbd.jpg">
+                        <div class="mui-media-body">Color of SIP CBD</div></a></li>
+                <li class="mui-table-view-cell mui-media mui-col-xs-6">
+                    <a href="#">
+                        <img class="mui-media-object" src="../images/yuantiao.jpg">
+                        <div class="mui-media-body">静静看这世界</div></a></li>
             </ul>
         </div>
     </div>

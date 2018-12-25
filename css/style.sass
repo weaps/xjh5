@@ -25,6 +25,11 @@ ul,li
     text-overflow: ellipsis
     -webkit-box-orient: vertical
     -webkit-line-clamp: 2
+.ui-nowrap
+    max-width: 100%
+    overflow: hidden
+    white-space: nowrap
+    text-overflow: ellipsis
 .btn-bar-2
     box-shadow: none
     .btn-primary
@@ -344,6 +349,18 @@ ul,li
                             line-height: 12px
                         span
                             color: #999999
-
+// 详情页推荐图文列表
+.recommend-img-list
+    .mui-card
+        margin: 2px
+        .img-box
+            img
+                width: 100%
+        .mui-card-content
+            a
+                display: block
+                line-height: 30px
+                color: #333333
+                @extend .ui-nowrap
 
 
