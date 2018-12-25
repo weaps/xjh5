@@ -159,31 +159,5 @@
 </div>
 <script src="./js/jquery-3.3.1.min.js"></script>
 <script src="./js/mui.min.js"></script>
-<script>
-$(function() {
-  // 列表头表筛选
-  function headFiltrate(className, children, olList) {
-    var pro_filter_mask = $('.pro_filter_mask')
-    $(className).on('click', function () {
-  $(pro_filter_mask).show()
-      var that = $(this)
-      var selected = $(this).children('.select')
-      $(className).removeClass('on')
-      $(this).addClass('on')
-      $(children).hide()
-      $(this).children().siblings(children).show()
-      $(this).children().children('.mui-icon').removeClass('mui-icon-arrowdown').addClass('mui-icon-arrowup') // 箭头切换
-      $('body').css("overflow","hidden") // 设置页面禁止滚动
-      $(olList).on('click', function(event){
-        var text = $(this).text()
-        that.children('.select').text(text)
-        event.stopPropagation();
-      })
-    })
-  }
-headFiltrate('.pro_filter_more .item', '.pro_filter-con', '.mui-table-view li')
-})
-
-</script>
 </body>
 </html>
