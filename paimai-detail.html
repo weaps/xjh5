@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>详情1</title>
+    <link rel="stylesheet" href="./css/mui.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <style>
+			html,
+			body {
+				background-color: #efeff4;
+			}
+			
+			.mui-bar .mui-pull-left .mui-icon {
+				padding-right: 5px;
+				font-size: 28px;
+			}
+			
+			.mui-bar .mui-btn {
+				font-weight: normal;
+				font-size: 17px;
+			}
+			
+			.mui-bar .mui-btn-link {
+				top: 1px;
+			}
+			
+			.mui-content img{
+				width: 100%;
+			}
+			
+			
+		</style>
+</head>
+<body>
+    <header id="header" class="mui-bar mui-bar-transparent">
+        <a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+        <h1 class="mui-title">拍卖详情</h1>
+    </header>
+    <!-- <nav class="mui-bar mui-bar-tab btn-bar-2">
+        <a class="mui-tab-item btn-primary" href="#Popover_0">
+            <i class="mui-icon mui-icon-phone"></i>在线咨询
+        </a>
+        <a class="mui-tab-item btn-orange" href="#Popover_2">
+            <i class="mui-icon mui-icon-chatbubble"></i>接洽需求
+        </a>
+    </nav> -->
+    <div class="mui-content">
+        <!--静态图片-->
+        <!-- <div class="detail-imgbox">
+            <img id="img1" src="../images/Helvetica.jpg" class="">
+        </div> -->
+        <!--轮播图片-->
+        <div id="slider" class="mui-slider" >
+            <div class="mui-slider-group">
+                <!-- 第一张 -->
+                <div class="mui-slider-item">
+                    <a href="#">
+                        <img src="../images/1.jpg">
+                    </a>
+                </div>
+                <!-- 第二张 -->
+                <div class="mui-slider-item">
+                    <a href="#">
+                        <img src="../images/2.jpg">
+                    </a>
+                </div>
+                <!-- 第三张 -->
+                <div class="mui-slider-item">
+                    <a href="#">
+                        <img src="../images/3.jpg">
+                    </a>
+                </div>
+                <!-- 第4张 -->
+                <div class="mui-slider-item">
+                    <a href="#">
+                        <img src="../images/4.jpg">
+                    </a>
+                </div>
+            </div>
+            <div class="mui-slider-indicator">
+                <em class="mui-indicator mui-active"></em>
+                <em class="mui-indicator"></em>
+                <em class="mui-indicator"></em>
+                <em class="mui-indicator"></em>
+            </div>
+        </div>
+        <!-- 标题 -->
+        <div class="detail-info bgf">
+            <h1>养殖三角帆蚌家系的建立和良种选育方法</h1>
+            <small><strong>竟价场次：GZPM-2018829642</strong></small>
+        </div>
+        <!-- 类型 -->
+        <div class="info-table bgf">
+            <div class="title">基本信息</div>
+            <ul class="mui-row">
+                <li class="mui-col-xs-6 mui-ellipsis">
+                    <span class="label">起拍价：</span>
+                    <span class="con"><strong class="text-danger">2</strong> 万元</span>
+                </li>
+                <li class="mui-col-xs-6 mui-ellipsis">
+                    <span class="label">增价梯度：</span>
+                    <span class="con"><strong class="text-danger">3.0</strong> 万元</span>
+                </li>
+                <li class="mui-col-xs-6 mui-ellipsis">
+                    <span class="label">技术领域：</span>
+                    <span class="con">海洋开发</span>
+                </li>
+                <li class="mui-col-xs-6 mui-ellipsis">
+                    <span class="label">合作方式：</span>
+                    <span class="con">许可转让</span>
+                </li>
+                <li class="mui-col-xs-6 mui-ellipsis">
+                    <span class="label">开始时间：</span>
+                    <span class="con">2018-12-27 11:11</span>
+                </li>
+                <li class="mui-col-xs-6 mui-ellipsis">
+                    <span class="label">结束时间：</span>
+                    <span class="con">2018-12-27 11:13</span>
+                </li>
+                <li class="mui-col-xs-6 mui-ellipsis">
+                    <span class="label">联系人：</span>
+                    <span class="con">李好</span>
+                </li>
+                <li class="mui-col-xs-6 mui-ellipsis">
+                    <span class="label">电话：</span>
+                    <span class="con">15955161637</span>
+                </li>
+                <li class="mui-col-xs-6 mui-ellipsis">
+                    <span class="label">邮箱：</span>
+                    <span class="con">1Q2W@123.com</span>
+                </li>
+                <li class="mui-col-xs-6 mui-ellipsis">
+                    <span class="label">竞价方式：</span>
+                    <span class="con">多次报价</span>
+                </li>
+            </ul>
+        </div>
+        <!-- 出价器 -->
+        <div class="info-table bgf mt10">
+            <div class="title">出价器</div>
+            <div class="activity-center">
+                <div class="mui-row">
+                    <p style="line-height: 20px; height: 20px;">
+                        <strong>梯度出价</strong>
+                        <small class="mui-pull-right">当前最新出价为： <strong class="text-danger">1.00</strong> 万元</small>
+                    </p>
+                    <div class="mui-col-xs-8">
+                        <div class="mui-numbox" data-numbox-min='0'  data-numbox-step='100' style="width: 100%;height: 50px;box-sizing: border-box">
+                            <button class="mui-btn-numbox-minus" type="button">-</button>
+                            <input class="mui-input-numbox" type="number">
+                            <button class="mui-btn-numbox-plus" type="button">+</button>
+                        </div>
+                    </div>
+                    <div class="mui-col-xs-4 mui-text-right">
+                        <button class="mui-btn mui-btn-warning" style="height: 50px;">出价</button>
+                    </div>
+                </div>
+                <div class="mui-row mt20">
+                    <p style="line-height: 20px; height: 20px;">
+                        <strong>手动出价</strong>
+                        <small class="mui-pull-right">我的出价为： <strong class="text-danger">1.00</strong> 万元</small>
+                    </p>
+                    <div class="mui-col-xs-8">
+                        <div class="mui-numbox" data-numbox-min='0'  data-numbox-step='100' style="width: 100%;height: 50px;box-sizing: border-box">
+                            <button class="mui-btn-numbox-minus" type="button">-</button>
+                            <input class="mui-input-numbox" type="number">
+                            <button class="mui-btn-numbox-plus" type="button">+</button>
+                        </div>
+                    </div>
+                    <div class="mui-col-xs-4 mui-text-right">
+                        <button class="mui-btn mui-btn-success" style="height: 50px;">出价</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 需求简介 -->
+        <div class="info-table bgf mt10">
+            <div class="title">需求简介</div>
+            <div class="activity-center">
+                <p>伴随消费经济模式升级，服务业GDP占比超50%，共享人力服务成为当下互联网创投蓝海。这为创新人力服务模式提供了新生机，也为众多投资者带来了新商机。创业者纷纷开始投身“互联网+共享人力服务”，希望能在这波共享经济红利中分一杯羹。</p>
+            </div>
+        </div>
+        <!-- 需求内容 -->
+        <div class="info-table bgf mt10">
+            <div class="title">需求内容</div>
+            <div class="activity-center">
+                <p>那么，在共享经济时代，创业者都是如何发掘创新服务渠道，找到适合自己的创业形式的？什么是共享经济大潮中最适合的服务模式？到底该如何抓住创新人力服务的红利期，玩转创新服务模式？</p>
+            </div>
+        </div>
+
+        <!-- 性能指标要求 -->
+        <div class="info-table bgf mt10">
+            <div class="title">性能指标要求</div>
+            <div class="activity-center">
+                <ol>
+                    <li>确保每个项目方信息真实有效；</li>
+                    <li>提供全程贴身服务，专业客服人员全程跟进对接服务环节；</li>
+                    <li>提供专业的技术交易咨询服务。</li>
+                    <li>提供资金担保服务，确保买方资金安全</li>
+                    <li>提供交易订单存证数据，协助处理交易纠纷</li>                    
+                </ol>
+            </div>
+        </div>
+        <div class="substance-more-activit-title flex">
+            <span class="title-line"></span>
+            <p class="list-title">更多精彩推荐</p>
+            <span class="title-line"></span>
+        </div>
+        <!-- 推荐 -->
+        <div class="bgf home-list-item recommend-img-list">
+            <ul class="mui-table-view mui-grid-view">
+                <li class="mui-table-view-cell mui-media mui-col-xs-6">
+                    <a href="#"><img class="mui-media-object" src="../images/muwu.jpg">
+                        <div class="mui-media-body">Color of SIP CBD</div>
+                    </a>
+                </li>
+                <li class="mui-table-view-cell mui-media mui-col-xs-6">
+                    <a href="#">
+                        <img class="mui-media-object" src="../images/shuijiao.jpg">
+                        <div class="mui-media-body">静静看这世界</div>
+                    </a>
+                </li>
+                <li class="mui-table-view-cell mui-media mui-col-xs-6">
+                    <a href="#"><img class="mui-media-object" src="../images/cbd.jpg">
+                        <div class="mui-media-body">Color of SIP CBD</div>
+                    </a>
+                </li>
+                <li class="mui-table-view-cell mui-media mui-col-xs-6">
+                    <a href="#">
+                        <img class="mui-media-object" src="../images/yuantiao.jpg">
+                        <div class="mui-media-body">静静看这世界</div>
+                    </a>
+                </li>
+                <li class="mui-table-view-cell mui-media mui-col-xs-6">
+                    <a href="#"><img class="mui-media-object" src="../images/muwu.jpg">
+                        <div class="mui-media-body">Color of SIP CBD</div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <script src="./js/mui.min.js"></script>
+</body>
+</html>
