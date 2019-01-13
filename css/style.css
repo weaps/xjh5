@@ -135,11 +135,12 @@ ul, li {
   text-overflow: ellipsis;
 }
 
-.home-list-item .mui-table-view-cell > a:not(.mui-btn) .mui-media-body .name {
-  line-height: 1.5;
+.home-list-item .mui-media-body .name {
+  line-height: 1.2;
   margin: 0;
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 400;
+  color: #333333;
   display: -webkit-box;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -147,26 +148,26 @@ ul, li {
   -webkit-line-clamp: 2;
 }
 
-.home-list-item .mui-table-view-cell > a:not(.mui-btn) .mui-media-body .info .price {
+.home-list-item .mui-media-body .info .price {
   color: #ff9000;
   font-size: .4rem;
 }
 
-.home-list-item .mui-table-view-cell > a:not(.mui-btn) .mui-media-body .info .price strong {
+.home-list-item .mui-media-body .info .price strong {
   font-size: 1rem;
 }
 
-.home-list-item .mui-table-view-cell > a:not(.mui-btn) .mui-media-body .info .city {
+.home-list-item .mui-media-body .info .city {
   color: #999999;
   font-size: .6rem;
 }
 
-.home-list-item .mui-table-view-cell > a:not(.mui-btn) .mui-media-body .des span {
+.home-list-item .mui-media-body .des span {
   display: inline-block;
   margin-right: 10px;
 }
 
-.home-list-item .mui-table-view-cell > a:not(.mui-btn) .mui-media-body .des span:last-child {
+.home-list-item .mui-media-body .des span:last-child {
   margin-right: 0;
 }
 
