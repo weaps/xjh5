@@ -66,13 +66,13 @@ ul,li
                 opacity: .8
                 color: #ffffff
 .bar-xj-home
-    background: $primaryColor
-    box-shadow: none
+    background: #ffffff
+    // box-shadow: none
     .mui-title
-        color: #ffffff
+        color: $primaryColor
     .mui-btn-link,
     .mui-icon
-        color: #ffffff
+        color: $primaryColor
 .bar-xj-home
     .mui-tab-item
         &.mui-active
@@ -88,6 +88,10 @@ ul,li
                 width: 100%
 .bgf
     background: #ffffff
+.xj-nav
+    .mui-tab-item
+        &.mui-active
+            color: $primaryColor
 .mui-table-view
     .mui-table-view-cell > a:not(.mui-btn)
         .avatar
@@ -668,7 +672,13 @@ ul,li
     opacity: 0
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0)
 
-
+.logo
+    display: inline-block
+    width: 40px
+    height: 40px
+    background: url(../images/logo.png) no-repeat
+    background-size: 40px
+    vertical-align: top
 
 
 
